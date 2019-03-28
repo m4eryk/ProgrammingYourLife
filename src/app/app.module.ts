@@ -15,6 +15,10 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
+import { UserPageComponent } from './user-page/user-page.component';
+import { AdminComponent } from './admin/admin.component';
+import { AuthGuard } from './auth.guard';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,9 @@ import { MainPageComponent } from './main-page/main-page.component';
     FooterComponent,
     CardComponent,
     LoginPageComponent,
-    MainPageComponent
+    MainPageComponent,
+    UserPageComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
@@ -42,10 +48,19 @@ import { MainPageComponent } from './main-page/main-page.component';
       {
         path: '',
         component: MainPageComponent
+      },
+      {
+        path: 'user',
+        component: UserPageComponent
+      },
+      {
+        path: 'admin',
+        component: AdminComponent,
+        canActivate: [AuthGuard]
       }
       ])
     ],
-  providers: [],
+  providers: [AuthService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
