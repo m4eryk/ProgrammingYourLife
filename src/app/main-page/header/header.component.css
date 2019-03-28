@@ -1,0 +1,46 @@
+.header{
+   width: 100%;
+   margin: 0 auto;
+   max-width: 960px;
+   background: #aca7a3;
+}
+nav ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+nav a:hover{
+    background-color: #1d1f21;
+    border-bottom: 2px solid white;
+
+}
+
+.logo{
+    display: flex;
+    margin: 0 auto;
+    max-width: 45px;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 768px){
+   
+    nav ul{
+        display: flex;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo{
+        margin: 0;
+    }
+}
+ 

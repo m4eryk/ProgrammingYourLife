@@ -1,0 +1,46 @@
+.container{
+    background-color: #1d1f21;
+}
+.content{
+    color: #ffffff;
+    background: url("../../../assets/img/home-baner.png")no-repeat;
+    height: 390px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+
+        text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .content{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .text{
+        width: 400px;
+        text-align:  center;
+        margin-right: 10px;
+        line-height: 18px;  
+        font-size: 18px;        
+    }
+    .text h1{
+        text-align: left;
+        line-height: 40px;
+        word-spacing: 9999rem;
+        font-size: 50px;
+    }
+    .text h1:hover {
+        color: #6e2070 ;
+        text-shadow: #6e2070 0 0 10px;
+    }
+    .text p:hover{
+        color: green;
+    }
+   
+}

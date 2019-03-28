@@ -1,0 +1,100 @@
+.container {
+    background: #bdb7b7;
+    height: 470px;
+}
+h1{
+    background-color: #1d1f21;
+    color:#ffffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+p{
+    
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 25px;
+    margin: 0;
+    padding-top: 70px;
+    z-index: 10;
+    font-size: 25px;
+    color:#ffffffff; 
+    width: 500px;
+    padding-right:20px; 
+    text-shadow: #fff -1px -1px 0, 
+                 #333 1px 1px 0;
+    
+}
+.container .ng2-carouselamos-container{
+        width: 70%;
+        margin: 0 auto;
+    }
+.container .slide-items{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+      
+}
+
+.slide-items img{
+    padding: 0;
+    margin: 0;
+    z-index: -1;
+    position: relative;
+    background-size: cover;
+    width: 752px;
+    height: 440px;
+    bottom: 180px;
+
+}
+#left, #right{
+    position: relative;
+    top: 20px;
+    width: 75px;
+
+}
+
+@media screen and (min-width: 768px){
+    .slide-items img{
+        width: 960px;
+        height: 560px;
+    }
+    h1{
+        font-size: 100px;
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        height: 660px;
+    }
+    p{
+        width: 600px;
+    }
+    #left, #right{
+        width: 100px;
+        
+    
+    }
+}
+@media screen and (max-width: 498px){
+    .slide-items img{
+        width: 500px;
+        height: 400px;
+    }
+    h1{
+        font-size: 25px;
+
+    }
+    .container{
+        height: 420px;
+    }
+    p{
+        width: px;
+    }
+    #left, #right{
+        width: 50px;
+    
+    }
+
+}
